@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*animación para el despliege del menu. el 0% es para que se oculte y el 50% espara que vaya bajndo. botar sería el nombre de la variable donde se guarda la anicación*/
+@keyframes botar {
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+}
+
+.navegation{
+    transform: translateY(-100%);
+    animation-name: botar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.menu li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+
+}

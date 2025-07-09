@@ -1,0 +1,32 @@
+body{
+    background-color: #d09306;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: #ecab0f;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom,  #ecab0f 75%, white 50%);
+    align-items: center;
+    text-align: center;
+}
+
+.circular-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* Opcional: Agrega un borde */
+  border: 5px solid #fff;
+}
+
+.letters{
+    color: black;
+    font-weight: bold;
+    justify-content: space-around;
+    align-content: flex-end;
+}
