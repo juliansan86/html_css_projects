@@ -1,32 +1,37 @@
 body{
+    font-family: Montserrat;
     background-color: #d09306;
     display: flex;
     justify-content: center;
+    padding: 150px;
 }
 
 .card{
     width: 400px;
     height: 400px;
+    padding: 10px;
     background-color: #ecab0f;
-    font-family: 'Times New Roman', Times, serif;
     color: white;
     font-weight: bold;
+    border-radius: 10px;
     background-image: linear-gradient(to bottom,  #ecab0f 75%, white 50%);
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .circular-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  /* Opcional: Agrega un borde */
-  border: 5px solid #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* Opcional: Agrega un borde */
+    border: 5px solid #fff;
 }
 
 .letters{
     color: black;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-content: flex-end;
 }
