@@ -1,37 +1,22 @@
+html{
+    font-size: 10px;
+}
+
 body{
-    font-family: Montserrat;
-    background-color: #d09306;
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    /*background-color: #d09306;
     display: flex;
     justify-content: center;
-    padding: 150px;
+    padding: 150px;*/
 }
 
-.card{
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    background-color: #ecab0f;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    background-image: linear-gradient(to bottom,  #ecab0f 75%, white 50%);
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.circular-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    /* Opcional: Agrega un borde */
-    border: 5px solid #fff;
-}
-
-.letters{
-    color: black;
-    font-weight: bold;
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: #d09306;
 }
