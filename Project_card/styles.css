@@ -1,14 +1,21 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 html{
     font-size: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 body{
     font-family: "Montserrat";
     font-size: 1.6rem;
-    /*background-color: #d09306;
-    display: flex;
-    justify-content: center;
-    padding: 150px;*/
 }
 
 .layout{
@@ -19,4 +26,92 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #d09306;
+}
+
+.layout__main{
+    min-width: 40rem;
+    border: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 0px 14px #b57c00 ;
+    border-radius: 20px;
+}
+
+.main__user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    background-color: #d09306;
+    border-radius: 10px 10px 0 0;
+}
+
+.user__container-img{
+    width: 13rem;
+    height: 13rem;
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    border-radius: 13rem;
+}
+
+.user__img{
+    border-radius: 13rem;
+    width: 100%;
+    height: 100%;
+}
+
+.user__content{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.user__name{
+    color: #fff;
+    font-weight: 600;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+.user__nick,
+.user__city{
+    color: #fff;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.main__follows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 3rem 4rem;
+    text-align: center;
+}
+
+.follows__follow{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;    
+    width: 33.3%;
+}
+
+.follows__follow:hover{
+    border: 2px solid #eae4e4;
+    border-radius: 10px;
+}
+
+.follow__number{
+    color: #564948;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.follow__subtitle{
+    color: #000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.5;
 }
