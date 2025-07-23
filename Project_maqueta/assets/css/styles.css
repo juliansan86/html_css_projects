@@ -52,6 +52,9 @@ body{
 .search__control{
     flex-basis: 75%;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F4F4;
 }
 
 .search__input{
@@ -63,4 +66,138 @@ body{
     font-weight: bold;
     color: #2d2d2d;
     text-align: center;
+}
+
+.search__control > .fa-solid{
+    width: 5%;
+    cursor: pointer;
+    transition: all 300ms linear;
+    margin-top: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+.search__control > .fa-solid:hover{
+    color: #2761DA;
+}
+
+.search__input::placeholder{
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.search_select{
+    width: 25%;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.layout_word{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.word__title{
+    color: #2d2d2d;
+    font-weight: 900;
+    font-size: 4.5rem;
+}
+
+.word__btn{
+    background-color: #47a8ed;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.word__btn .fa-solid{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.word__btn:hover{
+    background-color: #0f46bd;
+}
+
+.definitions__title{
+    overflow: hidden;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #2d2d2d;
+}
+
+.definitions__title::before,
+.definitions__title::after{
+    content: '';
+    background-color: #2d2d2d;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.definitions__title::before{
+    right: 0.5rem;
+    margin-left: -50%;
+}
+
+.definitions__title::after{
+    left: 0.5rem;
+    margin-right: -50%;
+}
+
+.definitions__list{
+    width: 100%;
+    padding: 2.5rem;
+    list-style: disc;
+}
+
+.list__item{
+    padding: 2rem 0.5rem;
+}
+
+.list__item::marker{
+    color: #0f46bd;
+}
+
+.list__item b{
+    color: #0f46bd;
+    font-weight: 900;
+}
+
+.syn__title{
+    display: inline;
+    color: #949494;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.syn__item{
+    display: inline-block;
+    color: #0f46bd;
+    font-weight: bold;
+}
+
+.layout__footer{
+    width: 100%;
+    border-top: 1px solid #ececec;
+    padding: 1.5rem 0;
+}
+
+.footer__text{
+    font-size: 1.4rem;
+    color: #8f8f8f;
 }
