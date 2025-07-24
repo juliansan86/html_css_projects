@@ -1,0 +1,125 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.layout{
+    width: 100%;
+    min-height: 100%;
+    background-color: #0b0b86;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main{
+    min-width: 475px;
+}
+
+.main__title{
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.main__generate{
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.generate__email{
+    font-size: 2.5rem;
+    color: #1c1a1a;
+    font-weight: 600;
+}
+
+.generate__icon{
+    font-size: 2.1rem;
+    color: #1a5cac;
+}
+
+.main__form{
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+.control__title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.control__text{
+    color: black;
+    font-weight: 600;
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+
+.control__number{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #1a5cac;
+    opacity: 0.8;
+}
+
+.control__range{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #1c1a1a;
+    border-radius: 0.2rem;
+    height: 0.8rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.control__range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.form__control{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.control__checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 1.5rem;
+    border: 2px solid #000;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.control__checkbox:checked{
+    background-image: url(./img/check.svg);
+    background-size: contain;
+}
+
