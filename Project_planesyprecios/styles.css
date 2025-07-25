@@ -1,0 +1,187 @@
+/* Fondo general */
+body {
+    background: #ecf1f5;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.pricing {
+    max-width: 1100px;
+    margin: 16px auto 0 auto;
+    padding: 24px 16px 40px 16px;
+    border-radius: 10px;
+}
+
+/* Título principal */
+.pricing__title {
+    text-align: center;
+    color: #c75c5c;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Contenedor de las tarjetas */
+.pricing__cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas */
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 32px 28px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.card--standard {
+    background: #c75c5c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.card__plan {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.card__price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.card__price span {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    width: 100%;
+}
+
+.card__feature {
+    border-bottom: 1px solid #e3e7ee;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.card--standard .card__feature {
+    border-bottom: 1px solid #fff3;
+}
+
+.card__feature:last-child {
+    border-bottom: none;
+}
+
+.card__button {
+    background: #c75c5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card--standard .card__button {
+    background: #fff;
+    color: #c75c5c;
+}
+
+.card__button:hover {
+    background: #a94b4b;
+}
+
+.card--standard .card__button:hover {
+    background: #ffeaea;
+}
+
+/* Toggle de suscriptor extra */
+.pricing__extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    gap: 8px;
+}
+
+.pricing__extra-label {
+    font-size: 1rem;
+    color: #6c6c6c;
+    margin-right: 6px;
+}
+
+/* Toggle switch */
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    display: inline-block;
+}
+
+.toggle__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #e3e7ee;
+    border-radius: 22px;
+    transition: .4s;
+}
+
+.toggle__slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.toggle__input:checked + .toggle__slider {
+    background-color: #c75c5c;
+}
+
+.toggle__input:checked + .toggle__slider:before {
+    transform: translateX(18px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .pricing__cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+}

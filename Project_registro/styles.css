@@ -1,0 +1,198 @@
+/* Fondo general */
+body {
+    background: #f5f6fb;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.register {
+    padding: 24px;
+}
+
+.register__container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.07);
+    display: flex;
+    max-width: 950px;
+    margin: 32px auto;
+    overflow: hidden;
+}
+
+/* Barra lateral de pasos */
+.register__steps {
+    background: linear-gradient(135deg, #7b5cff 0%, #5b4baf 100%);
+    padding: 40px 32px;
+    width: 290px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.steps__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.steps__item:last-child {
+    margin-bottom: 0;
+}
+
+.steps__item--active,
+.steps__item:hover {
+    opacity: 1;
+}
+
+.steps__circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    color: #7b5cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.steps__item--active .steps__circle {
+    background: #7b5cff;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.steps__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__label {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.steps__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.steps__item--active .steps__title {
+    color: #fff;
+}
+
+.steps__item:not(.steps__item--active) .steps__title {
+    color: #d1cfff;
+    font-weight: 700;
+}
+
+/* Sección del formulario */
+.register__form-section {
+    flex: 1;
+    padding: 48px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register__title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #4b2673;
+    margin: 0 0 10px 0;
+}
+
+.register__subtitle {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form__label {
+    font-size: 1rem;
+    color: #4b2673;
+    font-weight: 500;
+}
+
+.form__input {
+    padding: 13px 16px;
+    border: 1.5px solid #e3e7ee;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafbff;
+    color: #333;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.form__input:focus {
+    border-color: #7b5cff;
+    background: #fff;
+}
+
+.form__button {
+    margin-top: 18px;
+    padding: 14px 0;
+    background: #2d1863;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form__button:hover {
+    background: #4b2673;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .register__container {
+        flex-direction: column;
+        max-width: 98vw;
+    }
+    .register__steps {
+        width: 100%;
+        flex-direction: row;
+        padding: 24px 12px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: auto;
+    }
+    .steps__item {
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+    .register__form-section {
+        padding: 32px 16px 24px 16px;
+    }
+}
