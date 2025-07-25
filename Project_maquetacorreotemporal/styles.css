@@ -123,3 +123,40 @@ body{
     background-size: contain;
 }
 
+.control__label{
+    color: black;
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.control__input{
+    width: 100%;
+    background-color: #1c1a1a;
+    padding: 2rem;
+    margin-top: 0.5rem;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: #ddd;
+    text-transform: capitalize;
+}
+
+.form__submit{
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #1a5cac;
+    transition:all 300ms linear;
+}
+
+.form__submit:hover{
+    background-color: #2a4d65;
+}
